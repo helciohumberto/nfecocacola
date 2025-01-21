@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NF-Coca-Cola</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora de Preço Unitário</h1>
+      <form id="calcForm">
+        <label for="fardos">Quantidade de Fardos:</label>
+        <input
+          type="number"
+          id="fardos"
+          placeholder="Digite a quantidade de fardos"
+          required
+        />
+
+        <label for="unidades">Unidades por Fardo:</label>
+        <input
+          type="number"
+          id="unidades"
+          placeholder="Digite o número de unidades por fardo"
+          required
+        />
+
+        <label for="valor">Valor Total (R$):</label>
+        <input
+          type="number"
+          id="valor"
+          placeholder="Digite o valor total"
+          step="0.01"
+          required
+        />
+
+        <button type="button" onclick="calcular()">
+          Calcular Preço Unitário
+        </button>
+      </form>
+      <div class="result" id="resultado"></div>
+      <footer>
+        Desenvolvido por:
+        <a href="https://github.com/helciohumberto" target="_blank"
+          >Hélcio Humberto</a
+        >
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

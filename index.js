@@ -23,11 +23,10 @@ function calcular() {
   // Calcula o preço unitário
   const totalUnidades = qtdFardos * unidadesPorFardo;
   const precoUnitario = valorTotal / totalUnidades;
+  
+  // Total unidades
+  
 
   // Exibe o resultado
-  document.getElementById(
-    "resultado"
-  ).innerHTML = `O preço unitário é: <span>R$${precoUnitario.toFixed(
-    6
-  )}</span>`;
+  document.getElementById("resultado").innerHTML = `O preço unitário é: <span>R$${precoUnitario.toFixed(6)}</span> <br><br> Total unidades produto: <span>${totalUnidades}</span>`;
 }
